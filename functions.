@@ -1,0 +1,46 @@
+/api/auth/[...nextauth]
+/api/grader
+Functions
+/api/auth/[...nextauth]
+Node.js 24.x
+1.2 MB
+≤300s
+iad1
+
+
+/api/grader
+Node.js 24.x
+1.2 MB
+≤300s
+iad1
+
+
+/api/hackathons
+Node.js 24.x
+686.3 kB
+≤300s
+iad1
+
+
+/api/health
+Node.js 24.x
+686.3 kB
+≤300s
+iad1
+
+
+/api/whatsapp
+Node.js 24.x
+1.2 MB
+≤300s
+iad1
+
+
+/api/whatsapp/send
+Node.js 24.x
+1.2 MB
+≤300s
+iad1
+
+
+/favicon.ico
