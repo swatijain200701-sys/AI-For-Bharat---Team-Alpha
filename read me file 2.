@@ -1,0 +1,160 @@
+# 🚀 AI-OppHub — Hackathon, Grant & Fellowship Discovery Platform
+
+> **Find your next big opportunity with AI.** AI-OppHub connects Indian innovators with live hackathons, grants, and fellowships — powered by AWS Bedrock Claude AI, WhatsApp alerts, and real-time data from Devfolio.
+
+🌐 **Live Demo:** [ai-opphub-next.vercel.app](https://ai-opphub-next.vercel.app)
+
+---
+
+## ✨ Features
+
+| Feature | Details |
+|---|---|
+| 🔍 **Explore Opportunities** | Browse live, ongoing 2026 hackathons from Devfolio API |
+| 🤖 **AI Pitch Grader** | Paste or upload your pitch — Claude AI scores it 0–100 with detailed feedback |
+| 📱 **WhatsApp Alerts** | Get opportunity alerts & sync your account via Twilio WhatsApp |
+| 💾 **Save & Apply** | Bookmark opportunities and track applications locally |
+| 🎯 **AI Match Scores** | Every opportunity has a personalized AI match % |
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Tech |
+|---|---|
+| **Frontend** | Next.js 14 (App Router), TypeScript, Tailwind CSS |
+| **AI Backend** | AWS Bedrock (Claude 3 Haiku) |
+| **WhatsApp** | Twilio WhatsApp API (Sandbox) |
+| **Live Data** | Devfolio Hackathon API |
+| **Hosting** | Vercel |
+
+---
+
+## 📁 Project Structure
+
+```
+ai-opphub-next/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx                  # Homepage / Landing
+│   │   ├── dashboard/
+│   │   │   ├── explore/page.tsx      # Explore Opportunities
+│   │   │   ├── grader/page.tsx       # AI Pitch Grader
+│   │   │   ├── whatsapp/page.tsx     # WhatsApp Sync
+│   │   │   └── saved/page.tsx        # Saved Opportunities
+│   │   └── api/
+│   │       ├── hackathons/route.ts   # Live hackathon data from Devfolio
+│   │       ├── grader/route.ts       # AI grading via AWS Bedrock
+│   │       └── whatsapp/
+│   │           └── send/route.ts     # Twilio WhatsApp messaging
+│   └── components/
+│       ├── InteractivePitchDemo.tsx  # Homepage AI demo widget
+│       └── ui/
+│           └── Button.tsx            # Reusable button component
+├── .env.local                        # (local only, never commit)
+└── vercel.json                       # Vercel config
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env.local` file at the project root with these keys:
+
+```env
+# AWS Bedrock (for AI Pitch Grader)
+AWS_ACCESS_KEY_ID=your_aws_access_key
+AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+AWS_REGION=us-east-1
+
+# Twilio (for WhatsApp)
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886   # Sandbox number
+```
+
+> **Never commit `.env.local` to GitHub.** It is listed in `.gitignore`.
+
+### How to get these keys:
+- **AWS Bedrock**: [aws.amazon.com → IAM → Create User → Bedrock Access](https://aws.amazon.com/bedrock/)
+- **Twilio**: [console.twilio.com](https://console.twilio.com/) → Account SID + Auth Token are on the homepage
+
+---
+
+## 📱 WhatsApp Sandbox Setup (Required for Twilio Free Accounts)
+
+Twilio's **free/trial accounts** use a Sandbox. Every number that should receive a message must first opt-in:
+
+1. Open WhatsApp on your phone
+2. Send the message: **`join bold-finally`** to **`+1 415 523 8886`**
+3. Wait for the confirmation reply
+4. Then click **Sync WhatsApp Now** on the dashboard
+
+> Sandbox membership lasts **72 hours**. Resend the join message to renew.
+
+---
+
+## 🚀 Local Development
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/<your-username>/ai-opphub-next.git
+cd ai-opphub-next
+
+# 2. Install dependencies
+npm install
+
+# 3. Create environment file
+cp .env.example .env.local
+# Fill in your API keys in .env.local
+
+# 4. Start the dev server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## ☁️ Deploy to Vercel
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel --prod
+```
+
+Set environment variables in **Vercel Dashboard → Project → Settings → Environment Variables**.
+
+---
+
+## 🎯 Hackathon Use Case
+
+This project was built for the **Build with AI for Bharat** theme:
+- Connects rural/semi-urban innovators with opportunities in regional languages
+- WhatsApp-first approach for low-bandwidth users
+- AI pitch coaching for first-time grant applicants
+
+---
+
+## 📸 Screenshots
+
+> *(Add your own screenshots here)*
+> - Homepage with AI match scores
+> - Explore page with live Devfolio hackathons  
+> - AI Pitch Grader with score breakdown
+> - WhatsApp Sync page
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+MIT
