@@ -1,0 +1,365 @@
+[
+  {
+    "type": "staticAssets",
+    "artefacts": [
+      {
+        "path": "/404",
+        "type": "HTML",
+        "size": 7417
+      },
+      {
+        "path": "/500",
+        "type": "HTML",
+        "size": 1995
+      },
+      {
+        "path": "/_next/static/chunks/117-f17879ece529298d.js",
+        "type": "JS",
+        "size": 123528
+      },
+      {
+        "path": "/_next/static/chunks/605-11cf09d5fbea5e0d.js",
+        "type": "JS",
+        "size": 34269
+      },
+      {
+        "path": "/_next/static/chunks/697-744d738ced4e4a1a.js",
+        "type": "JS",
+        "size": 27922
+      },
+      {
+        "path": "/_next/static/chunks/854-46029b09761bc1ee.js",
+        "type": "JS",
+        "size": 121610
+      },
+      {
+        "path": "/_next/static/chunks/972-252bc37210ca6a4d.js",
+        "type": "JS",
+        "size": 20578
+      },
+      {
+        "path": "/_next/static/chunks/app/_not-found/page-bef8d061b9215eb4.js",
+        "type": "JS",
+        "size": 1745
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/applications/page-9e1323c601a04b91.js",
+        "type": "JS",
+        "size": 160
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/explore/page-b7a2fe57a5657971.js",
+        "type": "JS",
+        "size": 8783
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/grader/page-82113abd6adeea81.js",
+        "type": "JS",
+        "size": 9637
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/layout-3795a000c619914d.js",
+        "type": "JS",
+        "size": 7328
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/page-63929a5a1ef0bd52.js",
+        "type": "JS",
+        "size": 212
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/saved/page-82b5511376af4174.js",
+        "type": "JS",
+        "size": 6418
+      },
+      {
+        "path": "/_next/static/chunks/app/dashboard/whatsapp/page-0cfdb95c4818ff9a.js",
+        "type": "JS",
+        "size": 7466
+      },
+      {
+        "path": "/_next/static/chunks/app/layout-ec0591d7d2c2f7d1.js",
+        "type": "JS",
+        "size": 639
+      },
+      {
+        "path": "/_next/static/chunks/app/login/page-e121c9bb281bac26.js",
+        "type": "JS",
+        "size": 3302
+      },
+      {
+        "path": "/_next/static/chunks/app/page-9577fcd94cd16299.js",
+        "type": "JS",
+        "size": 7600
+      },
+      {
+        "path": "/_next/static/chunks/fd9d1056-1f1f859026f5f0fa.js",
+        "type": "JS",
+        "size": 172834
+      },
+      {
+        "path": "/_next/static/chunks/framework-f66176bb897dc684.js",
+        "type": "JS",
+        "size": 139978
+      },
+      {
+        "path": "/_next/static/chunks/main-8d1c3741c95a1797.js",
+        "type": "JS",
+        "size": 111375
+      },
+      {
+        "path": "/_next/static/chunks/main-app-2dcde4753ea0d175.js",
+        "type": "JS",
+        "size": 461
+      },
+      {
+        "path": "/_next/static/chunks/pages/_app-72b849fbd24ac258.js",
+        "type": "JS",
+        "size": 280
+      },
+      {
+        "path": "/_next/static/chunks/pages/_error-7ba65e1336b92748.js",
+        "type": "JS",
+        "size": 247
+      },
+      {
+        "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "type": "JS",
+        "size": 112594
+      },
+      {
+        "path": "/_next/static/chunks/webpack-56d088442ba9ae75.js",
+        "type": "JS",
+        "size": 4157
+      },
+      {
+        "path": "/_next/static/css/07bdef5d860d010c.css",
+        "type": "CSS",
+        "size": 29783
+      },
+      {
+        "path": "/_next/static/media/19cfc7226ec3afaa-s.woff2",
+        "type": "Font",
+        "size": 19044
+      },
+      {
+        "path": "/_next/static/media/21350d82a1f187e9-s.woff2",
+        "type": "Font",
+        "size": 18744
+      },
+      {
+        "path": "/_next/static/media/8e9860b6e62d6359-s.woff2",
+        "type": "Font",
+        "size": 85272
+      },
+      {
+        "path": "/_next/static/media/ba9851c3c22cd980-s.woff2",
+        "type": "Font",
+        "size": 25844
+      },
+      {
+        "path": "/_next/static/media/c5fe6dc8356a8c31-s.woff2",
+        "type": "Font",
+        "size": 11272
+      },
+      {
+        "path": "/_next/static/media/df0a9ae256c0569c-s.woff2",
+        "type": "Font",
+        "size": 10280
+      },
+      {
+        "path": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+        "type": "Font",
+        "size": 48432
+      },
+      {
+        "path": "/_next/static/not-found.txt",
+        "type": "Misc",
+        "size": 9
+      },
+      {
+        "path": "/_next/static/qqb3Dg6uJ7xFxhmLwyE0l/_buildManifest.js",
+        "type": "JS",
+        "size": 224
+      },
+      {
+        "path": "/_next/static/qqb3Dg6uJ7xFxhmLwyE0l/_ssgManifest.js",
+        "type": "JS",
+        "size": 80
+      }
+    ]
+  },
+  {
+    "type": "serverlessFunctions",
+    "artefacts": [
+      {
+        "path": "/api/auth/[...nextauth]",
+        "type": "API",
+        "size": 1183902,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      },
+      {
+        "path": "/api/grader",
+        "type": "API",
+        "size": 1183902,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      },
+      {
+        "path": "/api/hackathons",
+        "type": "API",
+        "size": 686256,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      },
+      {
+        "path": "/api/health",
+        "type": "API",
+        "size": 686256,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      },
+      {
+        "path": "/api/whatsapp",
+        "type": "API",
+        "size": 1183902,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      },
+      {
+        "path": "/api/whatsapp/send",
+        "type": "API",
+        "size": 1183902,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      },
+      {
+        "path": "/favicon.ico",
+        "type": "Meta",
+        "size": 686256,
+        "regions": [
+          "global"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300
+      }
+    ]
+  },
+  {
+    "type": "ISR",
+    "artefacts": [
+      {
+        "path": "/",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "sourcePath": "/",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/dashboard",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/dashboard/applications",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/dashboard/explore",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/dashboard/grader",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/dashboard/saved",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/dashboard/whatsapp",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      },
+      {
+        "path": "/login",
+        "type": "Page",
+        "size": 739926,
+        "regions": [
+          "iad1"
+        ],
+        "runtime": "nodejs24.x",
+        "timeout": 300,
+        "staticRoutes": []
+      }
+    ]
+  },
+  {
+    "type": "cronJobs",
+    "artefacts": []
+  }
+]
