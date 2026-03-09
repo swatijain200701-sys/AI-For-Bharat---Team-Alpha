@@ -1,0 +1,28 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { cn } from "@/lib/utils";
+import { Providers } from "./providers";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "AI-OppHub | AI-powered Opportunity Hub",
+  description: "Democratizing Access to Innovation for Underserved Communities",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="dark">
+      <body className={cn(inter.className, "min-h-screen antialiased flex flex-col")}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
+    </html>
+  );
+}
