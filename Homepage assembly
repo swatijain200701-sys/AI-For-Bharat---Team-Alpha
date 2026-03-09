@@ -1,0 +1,27 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ProblemSolution from "@/components/ProblemSolution";
+import Features from "@/components/Features";
+import InteractivePitchDemo from "@/components/InteractivePitchDemo";
+import BharatSection from "@/components/BharatSection";
+import Steps from "@/components/Steps";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <main className="flex-1">
+        <Hero />
+        <ProblemSolution />
+        <Features />
+        <InteractivePitchDemo />
+        <BharatSection />
+        <Steps />
+        <CTA />
+      </main>
+      <Footer />
+    </>
+  );
+}
