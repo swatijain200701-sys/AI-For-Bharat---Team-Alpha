@@ -154,6 +154,193 @@ This project was built for the **Build with AI for Bharat** theme:
 Pull requests are welcome! For major changes, please open an issue first.
 
 ---
+aaaa<div align="center">
+
+# 🚀 AI-OppHub
+
+### India's AI-Powered Opportunity Discovery Platform
+
+*Connecting innovators with live hackathons, grants, and fellowships — powered by AWS Bedrock Claude AI and real-time data.*
+
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-06B6D4?logo=tailwindcss)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://ai-opphub-next.vercel.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**[🌐 Live Demo](https://ai-opphub-next.vercel.app)** • **[📖 Docs](#setup)** • **[🤝 Contribute](#contributing)**
+
+</div>
+
+---
+
+## 🎯 What is AI-OppHub?
+
+AI-OppHub is a full-stack web platform that helps Indian students, developers, and innovators discover and apply to **live hackathons, government grants, and fellowship programs** — with an AI assistant that scores your pitch before you submit.
+
+### The Problem We Solve
+> Rural and semi-urban innovators miss out on high-value opportunities because information is scattered across dozens of platforms, emails, and social media groups.
+
+### Our Solution
+✅ Aggregate live opportunities in one place (via Devfolio API)  
+✅ AI-powered pitch coaching before you apply  
+✅ WhatsApp-first alerts for low-bandwidth users  
+✅ Personalized match scores for each opportunity  
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|--------|-------------|
+| **🔍 Explore Opportunities** | Browse live 2026 hackathons pulled directly from Devfolio |
+| **🤖 AI Pitch Grader** | Paste your proposal — Claude AI scores it 0–100 with feedback |
+| **📄 Upload PDF** | Upload your pitch deck; text is extracted and auto-filled |
+| **📱 WhatsApp Alerts** | Receive alerts and apply directly from WhatsApp |
+| **💾 Save & Track** | Bookmark hackathons and track your application status |
+| **🎯 Match Scores** | AI-generated compatibility % for every opportunity |
+
+---
+
+## 🛠 Tech Stack
+
+```
+Frontend     →  Next.js 14 (App Router) + TypeScript + Tailwind CSS
+AI Backend   →  AWS Bedrock (Claude 3 Haiku)
+Messaging    →  Twilio WhatsApp API
+Live Data    →  Devfolio Hackathon API
+Hosting      →  Vercel
+```
+
+---
+
+## 📁 Project Structure
+
+```
+ai-opphub-next/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx                     # 🏠 Landing page
+│   │   ├── dashboard/
+│   │   │   ├── explore/page.tsx         # 🔍 Browse opportunities
+│   │   │   ├── grader/page.tsx          # 🤖 AI Pitch Grader tool
+│   │   │   ├── whatsapp/page.tsx        # 📱 WhatsApp sync
+│   │   │   └── saved/page.tsx           # 💾 Saved & applied list
+│   │   └── api/
+│   │       ├── hackathons/route.ts      # Devfolio live data proxy
+│   │       ├── grader/route.ts          # AWS Bedrock Claude AI call
+│   │       └── whatsapp/send/route.ts   # Twilio messaging
+│   └── components/
+│       ├── InteractivePitchDemo.tsx     # Homepage demo widget
+│       └── ui/Button.tsx
+├── .env.example                         # ← Copy this to .env.local
+├── .gitignore
+└── README.md
+```
+
+---
+
+## ⚡ Quick Start <a name="setup"></a>
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/<your-username>/ai-opphub-next.git
+cd ai-opphub-next
+npm install
+```
+
+### 2. Configure Environment
+
+```bash
+cp .env.example .env.local
+```
+
+Open `.env.local` and fill in your API keys:
+
+```env
+# AWS Bedrock (AI Pitch Grader)
+AWS_ACCESS_KEY_ID=your_key
+AWS_SECRET_ACCESS_KEY=your_secret
+AWS_REGION=us-east-1
+
+# Twilio (WhatsApp)
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
+```
+
+### 3. Run Locally
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) 🎉
+
+---
+
+## 🔑 Getting API Keys
+
+| Service | Where to Get |
+|---------|-------------|
+| **AWS Bedrock** | [aws.amazon.com](https://aws.amazon.com) → IAM → Create User → Enable Bedrock |
+| **Twilio** | [console.twilio.com](https://console.twilio.com) → Account SID & Auth Token on dashboard |
+
+---
+
+## 📱 WhatsApp Setup (Twilio Sandbox)
+
+Twilio's free account uses a sandbox. To receive messages, every number must **opt-in once**:
+
+```
+1. Open WhatsApp
+2. Send:  join bold-finally
+3. To:    +1 415 523 8886
+4. Wait for confirmation reply
+5. Then use the Sync button in the dashboard
+```
+
+> Sandbox access lasts 72 hours. Resend the message to reconnect.
+
+---
+
+## ☁️ Deploy to Vercel
+
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+Add environment variables in **Vercel Dashboard → Project → Settings → Environment Variables**.
+
+---
+
+## 🎯 Built For
+
+This project addresses the **AI for Bharat** challenge:
+- 🌏 Bridging the information gap for rural/semi-urban innovators  
+- 📱 WhatsApp-first for users with limited internet access  
+- 🤖 AI coaching to make grant applications more competitive  
+
+---
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+```bash
+git checkout -b feature/your-feature
+git commit -m "feat: add your feature"
+git push origin feature/your-feature
+```
+
+---
+
+## 📄 License
+
+[MIT](LICENSE) © 2026 AI-OppHub Team
+
 
 ## 📄 License
 
